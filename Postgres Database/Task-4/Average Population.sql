@@ -1,0 +1,1 @@
+select round(sum(population)/count(id),1) from city;

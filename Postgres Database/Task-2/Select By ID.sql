@@ -1,0 +1,1 @@
+SELECT * FROM city where id = 1661;
