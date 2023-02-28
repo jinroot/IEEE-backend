@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:blanchedalmond;text-align:center">
+<style>
+
+    div {
+        background-color: rgb(244, 221, 189);
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+
+</style>
+
+<div>
+
+   <dive><h1>Hi <span style="color:rgb(87, 0, 23)" id="name"></span> from <span style="color:rgb(87, 0, 23)" id="department"></span> department.</h1></dive>
+    <p>Sorry I didn't have enough time to make this project pretty.<br><br>But I added music :)</p>
+
+
+</div>
+<div style="top: 30%;left: 50%;">
+<audio controls autoplay id="music" loop src ="Surprise.mp3">
+    
+
+</audio>
+</div>
+<script>
+    var vol = document.getElementById("music");
+    vol.volume=0.25;
+
+    const name = localStorage.getItem('name');
+    const department = localStorage.getItem('department');
+    
+    document.getElementById('name').textContent= name;
+    document.getElementById('department').textContent= department;
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Intersets Survey form</title>
+</head>
+
+<body>
+<!--Dam this mess is unreadable
+    trying to flexbox without reading about flex box :< -->
+<style>
+    .content {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;flex-direction: column;
+    height: 900px;
+    background-color: #c1ecd5;
+    
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 30px;
+        flex-direction: column;
+        
+    }
+    input{
+        margin: 6px;
+        font-size: 20px;
+    }
+    
+
+
+</style>
+
+    <div class="content">
+
+    <h1>Employee Intersets Survey form</h1>
+    <form action="page.html" id="form"> 
+        
+        <div class="center">
+        <div>
+        <label>Enter your name: </label>
+        <input type="text" id="name" name="name" size="30px" required><br>
+        </div>
+        <div>
+        <label>Enter your department: </label>
+        <input type="text" id="department" size="30px" name="department" required><br>
+        </div>
+        <div>
+        <label>Tell us a little about yourself: </label>
+        <input  type="text" id="info" size="30px" name="info" required>
+        
+        </div>
+        <div>
+        <label>Do you exercise at home? </label><br>
+        </div>
+        <div>
+        <input type="radio" id="exercise" name="exercise" value="yes"  required checked>
+        <label for="exercise">No</label>
+        <input type="radio" id="exercise" name="exercise" value="no"selected>
+        <label for="adult">Yes</label>
+        </div> 
+        
+        <label>How do you like to read about your favorite topics? </label>
+    <div>
+        <input type="checkbox" id="book" name="read topics" value="book">
+        <label for="book">Books</label>
+
+        <input type="checkbox" id="or" name="read topics" value="or">
+        <label for="or">Online resources</label>
+
+        <input type="checkbox" id="Phone apps" name="read topics" value="Phone apps">
+        <label for="Phone apps">Phone apps</label>
+
+        <input type="checkbox" id="Magazines" name="read topics" value="Magazines">
+        <label for="Magazines">Magazines</label>
+    </div>
+    <div>
+        <label for="movies">What genre of movies do you like?</label>
+        <select name="movies" id="movies">
+        <option value="scary things">scary things</option>
+        <option value="funny things">funny things</option>
+        <option value="annoying things(drama)">annoying things(drama)</option>
+        <option value="shrek">shrek</option>
+      </select>
+    </div>
+    <input type="submit" value="Submit form">
+    </div>
+
+    </form>
+
+</div>
+<script> 
+
+    const form = document.getElementById('form');
+    const name = document.getElementById('name');
+    const department = document.getElementById('department');   
+
+    form.addEventListener('submit',function(e) {
+        e.preventDefault();
+
+        const name_value = name.value;
+        const department_value = department.value;
+
+        localStorage.setItem('name',name_value);
+        localStorage.setItem('department',department_value);
+
+        window.location.href = "page.html";
+    })
+
+     </script>
+</body>
+
+
+</html>
