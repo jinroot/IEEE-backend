@@ -1,5 +1,5 @@
 To start off I don't recommend anyone to take any of the code in this 
-project to a real life project, as its non realistic full of security 
+project to a real life project, as its non realistic, full of security 
 issues and not efficient what so ever. 
 
 I was going to write a step by step README file to explain how to 
