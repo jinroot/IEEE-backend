@@ -1,0 +1,104 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+
+.center form {
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+/* App form styles */
+.app-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+/* top banner color and postion */
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: lightgoldenrodyellow;
+    z-index: 9999;
+}
+
+.top-banner img {
+    height: 80%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.top-banner h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.top-banner button {
+    height: 80%;
+    padding: 10px;
+    margin-right: 40px;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Styles for the hello user string */
+.center-h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+/* Styles for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styles for the buttons */
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hover styles for the buttons */
+.button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+

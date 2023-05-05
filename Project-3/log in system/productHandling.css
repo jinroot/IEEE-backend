@@ -1,0 +1,69 @@
+.header {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav form {
+    margin: 0;
+}
+
+.nav button {
+    background-color: white !important; 
+    color: #4CAF50 !important;
+    border: none !important;
+    padding: 10px 20px !important; 
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.nav button:hover {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+}
+
+input:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}

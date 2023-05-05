@@ -1,0 +1,105 @@
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Style for the form container */
+.login-form,
+.signup-form,
+.app-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+/* styles for the signup form */
+.login-form,.signup-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;flex-direction: column;
+  background-color: #c1ecd5;
+
+}
+/* Style for the form heading */
+.login-form h1,
+.signup-form h1,
+.app-form h1{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+/* Style for the centering */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+  flex-direction: column;
+
+}
+
+/* Style for the form labels */
+.login-form label,
+.signup-form label,
+.app-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Style for the form input fields */
+.login-form input,
+.signup-form input,
+.app-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Style for the form button */
+.login-form button[type="submit"],
+.signup-form button[type="submit"],
+.app-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+a {
+  color: #0077cc; /* sets the default link color */
+  text-decoration: none; /* removes the underline from the link */
+}
+
+a:hover {
+  color: #004466; /* sets the link color when hovered over */
+  text-decoration: underline; /* adds an underline when hovered over */
+}
+
+a:active {
+  color: #004466; /* sets the link color when clicked */
+}
+.signout{
+  width: 80px !important;
+  padding: 10px !important;
+  background-color: #4CAF50 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 3px !important;
+}
+.app-form{
+  max-width: 100%;
+
+}
+
+
+
