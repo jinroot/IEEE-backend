@@ -1,3 +1,5 @@
+The project works flawlessly if you ignore the security issues.
+
 To start off I don't recommend anyone to take any of the code in this 
 project to a real life project, as its non realistic, full of security 
 issues and not efficient what so ever. 
